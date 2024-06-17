@@ -1,0 +1,62 @@
+@import 'variables';
+
+body {
+	background-color: $color-light;
+}
+
+button {
+	margin-top: 20px;
+	padding: 8px 8px;
+	max-width: 150px;
+	width: 100%;
+	border-radius: 4px;
+	text-align: center;
+	font-family: 'Roboto', sans serif;
+	font-weight: 500;
+	font-size: 1rem;
+	background-color: $color3;
+	color: $color1;
+	border: 3px solid rgba(red($color2), green($color2), blue($color2), 0.2);
+	box-shadow: $box-shadow-button;
+	transition: color 0.2s ease;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: $color2;
+		color: $color-light;
+	}
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.popup-content {
+	background: $color2;
+	color: $color5;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1.3rem;
+	font-weight: 400;
+	padding: 50px;
+	text-align: center;
+	box-shadow: $box-shadow-popup;
+
+	button {
+		background-color: $color5;
+		border: 3px solid rgba(red($color4), green($color4), blue($color4), 0.5);
+
+		&:hover {
+			background-color: $color3;
+			color: $color-light;
+		}
+	}
+}
+
