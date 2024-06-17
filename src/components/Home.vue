@@ -4,12 +4,12 @@
 		<form @submit.prevent="submit">
 			<label>
 				Player X:
-				<input v-model="playerX" required />
 			</label>
+			<input v-model="playerX" required />
 			<label>
 				Player O:
-				<input v-model="playerO" required />
 			</label>
+			<input v-model="playerO" required />
 			<button type="submit">Start game</button>
 		</form>
 	</article>
@@ -66,9 +66,12 @@ form {
 	color: $color1;
 
 	label {
-		margin: 4px;
+		text-align: left;
+		margin: 4px 0;
+		width: 204px;
 	}
 	input {
+		margin-bottom: 8px;
 		padding: 8px;
 		font-size: 1rem;
 		font-family: 'Roboto', sans serif;
