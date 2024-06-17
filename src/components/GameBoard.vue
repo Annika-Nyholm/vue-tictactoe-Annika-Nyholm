@@ -2,7 +2,6 @@
 	<article class="gameboard">
 		<h2>TicTacToe-do!</h2>
 		<h3>{{ currentPlayerName }}´s turn - {{ currentPlayer }}</h3>
-		<p></p>
 		<div class="board">
 			<Cell
 				v-for="(value, index) in board"
