@@ -5,15 +5,14 @@
 			v-else
 			:playerX="playerX"
 			:playerO="playerO"
-      :gameStarted="gameStarted"
+			:gameStarted="gameStarted"
 			@update-score="updateScore"
-      @toggle-score-popup="toggleScorePopup"
-      @new-game="newGame"
-      @reset-game="resetGame"
-      @game-won="setWinner"
+			@toggle-score-popup="toggleScorePopup"
+			@new-game="newGame"
+			@reset-game="resetGame"
+			@game-won="setWinner"
 			ref="gameboard"
 		/>
-
 		<ScorePopup
 			v-if="showScorePopup"
 			:scores="scores"
@@ -50,9 +49,9 @@ onMounted(() => {
 	}
 });
 
-const startGame = (players: { playerX: string, playerO: string }) => {
-  playerX.value = players.playerX;
-  playerO.value = players.playerO;
+const startGame = (players: { playerX: string; playerO: string }) => {
+	playerX.value = players.playerX;
+	playerO.value = players.playerO;
 	localStorage.setItem('playerX', playerX.value);
 	localStorage.setItem('playerO', playerO.value);
 	gameStarted.value = true;
@@ -67,8 +66,13 @@ const updateScore = (winner: string) => {
 };
 
 const setWinner = (winnerValue: string) => {
-  winner.value = winnerValue === 'X' ? playerX.value : winnerValue === 'O' ? playerO.value : 'Draw';
-}
+	winner.value =
+		winnerValue === 'X'
+			? playerX.value
+			: winnerValue === 'O'
+			? playerO.value
+			: 'Draw';
+};
 
 const toggleScorePopup = () => {
 	showScorePopup.value = !showScorePopup.value;
@@ -76,7 +80,7 @@ const toggleScorePopup = () => {
 
 const resetGame = () => {
 	gameboard.value?.resetBoard();
-  winner.value = null;
+	winner.value = null;
 };
 
 const newGame = () => {
@@ -85,10 +89,8 @@ const newGame = () => {
 	playerX.value = '';
 	playerO.value = '';
 	scores.value = {};
-  winner.value = null;
+	winner.value = null;
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
