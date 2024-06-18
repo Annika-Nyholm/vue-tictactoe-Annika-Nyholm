@@ -4,12 +4,12 @@
 		<form @submit.prevent="submit">
 			<label>
 				Player X:
+				<input v-model="playerX" required />
 			</label>
-			<input v-model="playerX" required />
 			<label>
 				Player O:
+				<input v-model="playerO" required />
 			</label>
-			<input v-model="playerO" required />
 			<button type="submit">Start game</button>
 		</form>
 	</article>
@@ -66,24 +66,27 @@ form {
 	color: $color1;
 
 	label {
+		display: flex;
+		flex-direction: column;
 		text-align: left;
 		margin: 4px 0;
-		width: 204px;
-	}
-	input {
-		margin-bottom: 8px;
-		padding: 8px;
-		font-size: 1rem;
-		font-family: 'Roboto', sans serif;
-		font-weight: 500;
-		color: $color1;
-		background-color: $color5;
-		border-radius: 4px;
-		transition: background-color 0.3s ease;
-
-		&:hover {
-			background-color: $color3;
+		
+		input {
+			margin-bottom: 8px;
+			padding: 8px;
+			font-size: 1rem;
+			font-family: 'Roboto', sans serif;
+			font-weight: 500;
+			color: $color1;
+			background-color: $color5;
+			border-radius: 4px;
+			transition: background-color 0.3s ease;
+	
+			&:hover {
+				background-color: $color3;
+			}
 		}
 	}
+	
 }
 </style>
