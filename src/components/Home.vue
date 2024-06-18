@@ -2,11 +2,11 @@
 	<article class="home">
 		<h1>Welcome to TicTacToe-do!</h1>
 		<form @submit.prevent="submit">
-			<label>
+			<label for="playerName">
 				Player X:
 				<input v-model="playerX" required />
 			</label>
-			<label>
+			<label for="playerName">
 				Player O:
 				<input v-model="playerO" required />
 			</label>
