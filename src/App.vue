@@ -1,5 +1,5 @@
 <template>
-	<section id="app">
+	<section>
 		<Home v-if="!gameStarted" @start-game="startGame" />
 		<GameBoard
 			v-else
