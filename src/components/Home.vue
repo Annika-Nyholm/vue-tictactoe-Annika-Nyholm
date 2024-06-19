@@ -35,7 +35,7 @@ const submit = () => {
 .home {
 	font-family: 'Shadows Into Light', cursive;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 10dvh;
 
 	h1 {
 		font-size: 3rem;

@@ -126,7 +126,7 @@ defineExpose({ resetBoard });
 .gameboard {
 	font-family: 'Shadows Into Light', cursive;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 10dvh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -148,8 +148,9 @@ defineExpose({ resetBoard });
 .buttons {
 	display: flex;
 	flex-direction: column;
-}
-button {
-	margin: 6px;
+	
+	button {
+		margin: 6px;
+	}
 }
 </style>

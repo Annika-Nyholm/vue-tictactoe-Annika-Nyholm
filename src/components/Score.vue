@@ -13,10 +13,4 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/styles/variables';
-.score {
-	text-align: center;
-	margin-top: 20px;
-
-}
 </style>
