@@ -20,6 +20,7 @@ button {
 	box-shadow: $box-shadow-button;
 	transition: color 0.2s ease;
 	transition: background-color 0.3s ease;
+	cursor: pointer;
 
 	&:hover {
 		background-color: $color2;
