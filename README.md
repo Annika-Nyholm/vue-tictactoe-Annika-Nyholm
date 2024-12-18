@@ -15,11 +15,11 @@ Ett Tre-i-rad-spel byggt med Vue.js och SCSS, med hjälp av Vite för snabb utve
 Projektet är byggt med:
 - [Vue.js 3](https://vuejs.org/) för användargränssnitt och komponentbaserad utveckling.
 - [Vite](https://vitejs.dev/) för snabb utveckling och byggning av projektet.
-- [SCSS](https://sass-lang.com/) för modulär och effektiv styling.
+- [SCSS](https://sass-lang.com/) för effektiv styling.
 - LocalStorage API för att spara spelstatus och statistik.
 
 ## 📸 Demo
-*(Lägg till en länk till en live-demo här, eller skärmdumpar som visar spelets utseende och funktioner.)*
+*(https://annika-nyholm.github.io/vue-tictactoe-Annika-Nyholm/)*
 
 ## 🚀 Installation och användning
 För att köra projektet lokalt:
@@ -36,7 +36,6 @@ För att köra projektet lokalt:
 4. **Starta utvecklingsservern:**
    ```bash
    npm run dev
-   Applikationen kommer att köras på http://localhost:5173.
 5. **Bygg produktionen (valfritt):**
    ```bash
    Kopiera kod
