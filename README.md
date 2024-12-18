@@ -19,7 +19,8 @@ Projektet är byggt med:
 - LocalStorage API för att spara spelstatus och statistik.
 
 ## 📸 Demo
-*(https://annika-nyholm.github.io/vue-tictactoe-Annika-Nyholm/)*
+Prova spelet live här: [Tre-i-rad Demo](https://annika-nyholm.github.io/vue-tictactoe-Annika-Nyholm/)
+
 
 ## 🚀 Installation och användning
 För att köra projektet lokalt:
@@ -40,3 +41,6 @@ För att köra projektet lokalt:
    ```bash
    Kopiera kod
    npm run build
+
+## 🙏 Tack!
+Tack för att du tittade på mitt projekt! Har du några frågor eller feedback? Kontakta mig gärna via [min GitHub-profil](https://github.com/Annika-Nyholm)
