@@ -1,20 +1,43 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/Xnjua3bd)
-# Inlämningsuppgift Tre-i-rad
+# Tre-i-rad (Tic Tac Toe)
 
-Denna mall innehåller ett tomt vue-projekt baserat på typescript. Er uppgift är att skapa spelet tre-i-rad med hjälp av denna mall. Eftersom ni inte har någonting att utgå ifrån så har ni fria händer att skapa just er unika lösning.
+Ett Tre-i-rad-spel byggt med Vue.js och SCSS, med hjälp av Vite för snabb utveckling och byggning. Detta projekt uppfyller VG-nivåns krav från uppgiften och erbjuder en modern, interaktiv spelupplevelse.
 
-## Betyg G
+## 🎮 Funktioner
+- **Spelarnamn**: Spelare kan ange namn för X och O innan spelet startar.
+- **Spel-logik**: Spelet avgör vinnare eller oavgjort baserat på spelarnas drag.
+- **Spelstatus**: Inga drag kan göras efter att spelet avslutats.
+- **Nytt spel**: Möjlighet att återställa brädet och börja om.
+- **Poänghistorik**: Spelstatistik över vunna matcher sparas och kan visas.
+- **Återuppta spel**: Pågående spel och statistik sparas med LocalStorage, så att du kan stänga och öppna webbläsaren utan att förlora data.
+- **Nollställning**: Möjlighet att nollställa all statistik och börja om med nya spelare.
 
-- Kunna ange spelarnamn för X respektive O
-- Kunna spela ett spel och få en vinnare/oavgjort
-- Inte kunna göra fler drag efter spelet är slut
-- Kunna starta ett nytt spel
-- Använda minst en komponent
+## 🛠 Teknologier
+Projektet är byggt med:
+- [Vue.js 3](https://vuejs.org/) för användargränssnitt och komponentbaserad utveckling.
+- [Vite](https://vitejs.dev/) för snabb utveckling och byggning av projektet.
+- [SCSS](https://sass-lang.com/) för modulär och effektiv styling.
+- LocalStorage API för att spara spelstatus och statistik.
 
-## Betyg VG
+## 📸 Demo
+*(Lägg till en länk till en live-demo här, eller skärmdumpar som visar spelets utseende och funktioner.)*
 
-- Använda minst tre komponenter för er lösning
-- Spara poänghistorik för spelarna
-- Kunna visa poängstatistiken
-- Kunna stänga webbläsaren och komma tillbaka där spelet avbröts
-- Kunna nollställa statistik och börja om med nya spelare
+## 🚀 Installation och användning
+För att köra projektet lokalt:
+
+1. **Klona detta repository**:
+   ```bash
+   git clone https://github.com/Medieinstitutet/vue-tictactoe-Annika-Nyholm
+2. **Navigera till projektmappen:**
+   ```bash
+   cd vue-tictactoe-Annika-Nyholm
+3. **Installera beroenden:**
+    ```bash
+   npm install
+4. **Starta utvecklingsservern:**
+   ```bash
+   npm run dev
+   Applikationen kommer att köras på http://localhost:5173.
+5. **Bygg produktionen (valfritt):**
+   ```bash
+   Kopiera kod
+   npm run build
